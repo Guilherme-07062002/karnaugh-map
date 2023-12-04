@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "two_var_operations.h"
+#include "./operations/two-var/two_var_operations.h"
 
 // Função para selecionar a quantidade de variáveis
 void selectNumberVariables()
