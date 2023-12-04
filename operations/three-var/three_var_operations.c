@@ -30,28 +30,13 @@ void printKMapThreeVariables(int map[2][4])
 
 void fillKMapThreeVariables(int map[2][4])
 {
-  printf("-> ");
-  scanf("%d", &map[0][0]);
-
-  printf("-> ");
-  scanf("%d", &map[0][1]);
-
-  printf("-> ");
-  scanf("%d", &map[0][2]);
-
-  printf("-> ");
-  scanf("%d", &map[0][3]);
-
-  printf("-> ");
-  scanf("%d", &map[1][0]);
-
-  printf("-> ");
-  scanf("%d", &map[1][1]);
-
-  printf("-> ");
-  scanf("%d", &map[1][2]);
-
-  printf("-> ");
-  scanf("%d", &map[1][3]);
-  printf("\n");
+  // Preenchendo com um laço for:
+  for (int i = 0; i < 2; i++)
+  {
+    for (int j = 0; j < 4; j++)
+    {
+      printf("-> ");
+      scanf("%d", &map[i][j]);
+    }
+  }
 }
