@@ -6,16 +6,18 @@ void printKMapTwoVariables(int map[2][2])
 {
   printf("\nPara duas variáveis A e B:\n");
   printf("--------------------------------\n");
-  printf("\nTabela-Verdade para A e B:\n");
-  printf("-----------------\n");
-  printf("| A B | F(A, B) |\n");
-  printf("-----------------\n");
-  printf("| 0 0 |    %d    |\n", map[0][0]);
-  printf("| 0 1 |    %d    |\n", map[0][1]);
-  printf("| 1 0 |    %d    |\n", map[1][0]);
-  printf("| 1 1 |    %d    |\n", map[1][1]);
-  printf("-----------------\n");
-  printf("\nMapa de Karnaugh A e B:\n");
+
+  printf("\nTabela-Verdade\n");
+  printf("-----------\n");
+  printf("| F(A, B) |\n");
+  printf("-----------\n");
+  printf("|    %d    |\n", map[0][0]);
+  printf("|    %d    |\n", map[0][1]);
+  printf("|    %d    |\n", map[1][0]);
+  printf("|    %d    |\n", map[1][1]);
+  printf("-----------\n");
+
+  printf("\nMapa de Karnaugh\n");
   printf("---------\n");
   printf("| %d | %d |\n", map[0][0], map[0][1]);
   printf("| %d | %d |\n", map[1][0], map[1][1]);
@@ -25,14 +27,16 @@ void printKMapTwoVariables(int map[2][2])
 // Função para preencher o mapa de Karnaugh com 2 variáveis
 void fillKMapTwoVariables(int map[2][2])
 {
-  int A, B;
-  printf("Digite o valor para A (0 ou 1): ");
-  scanf("%d", &A);
-  printf("Digite o valor para B (0 ou 1): ");
-  scanf("%d", &B);
-  // Implementação das expressões booleanas para preencher o mapa de Karnaugh
-  map[0][0] = A && B;
-  map[0][1] = A && !B;
-  map[1][0] = !A && B;
-  map[1][1] = !A && !B;
+  printf("-> ");
+  scanf("%d", &map[0][0]);
+
+  printf("-> ");
+  scanf("%d", &map[0][1]);
+
+  printf("-> ");
+  scanf("%d", &map[1][0]);
+
+  printf("-> ");
+  scanf("%d", &map[1][1]);
+  printf("\n");
 }

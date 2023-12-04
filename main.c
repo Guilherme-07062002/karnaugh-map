@@ -11,7 +11,7 @@ void selectNumberVariables()
     switch (numberVariables)
     {
     case 2:
-        printf("Você escolheu 2 variáveis\n");
+        printf("Você escolheu 2 variáveis\nInforme os valores da tabela-verdade:\n");
         int map[2][2]; // Mapa de Karnaugh para 2 variáveis
         fillKMapTwoVariables(map);
         printKMapTwoVariables(map);
