@@ -27,16 +27,14 @@ void printKMapTwoVariables(int map[2][2])
 // Função para preencher o mapa de Karnaugh com 2 variáveis
 void fillKMapTwoVariables(int map[2][2])
 {
-  printf("-> ");
-  scanf("%d", &map[0][0]);
 
-  printf("-> ");
-  scanf("%d", &map[0][1]);
-
-  printf("-> ");
-  scanf("%d", &map[1][0]);
-
-  printf("-> ");
-  scanf("%d", &map[1][1]);
-  printf("\n");
+  // Preenchendo com um laço for:
+  for (int i = 0; i < 2; i++)
+  {
+    for (int j = 0; j < 2; j++)
+    {
+      printf("-> ");
+      scanf("%d", &map[i][j]);
+    }
+  }
 }
