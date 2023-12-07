@@ -18,10 +18,12 @@ void printKMapTwoVariables(int map[2][2])
   printf("-----------\n");
 
   printf("\nMapa de Karnaugh\n");
-  printf("---------\n");
-  printf("| %d | %d |\n", map[0][0], map[0][1]);
-  printf("| %d | %d |\n", map[1][0], map[1][1]);
-  printf("---------\n");
+  printf("----------------\n");
+  printf("   | 'B  |  B  |\n");
+  printf("----------------\n");
+  printf("'A |  %d  |  %d  |\n", map[0][0], map[0][1]);
+  printf(" A |  %d  |  %d  |\n", map[1][0], map[1][1]);
+  printf("----------------\n");
 }
 
 // Função para preencher o mapa de Karnaugh com 2 variáveis
