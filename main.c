@@ -2,7 +2,6 @@
 #include "./operations/two-var/two_var_operations.h"
 #include "./operations/three-var/three_var_operations.h"
 #include "./operations/four-var/four_var_operations.h"
-#include "./operations/five-var/five_var_operations.h"
 
 // Função para selecionar a quantidade de variáveis
 void selectNumberVariables()
@@ -30,12 +29,6 @@ void selectNumberVariables()
         int mapFourVariables[4][4]; // Mapa de Karnaugh para 4 variáveis
         fillKMapFourVariables(mapFourVariables);
         printKMapFourVariables(mapFourVariables);
-        break;
-    case 5:
-        printf("Você escolheu 5 variáveis\nInforme os valores da tabela-verdade:\n");
-        int mapFiveVariables[4][8]; // Mapa de Karnaugh para 5 variáveis
-        fillKMapFiveVariables(mapFiveVariables);
-        printKMapFiveVariables(mapFiveVariables);
         break;
     default:
         printf("Número de variáveis inválido\n");

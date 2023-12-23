@@ -1,6 +1,6 @@
 # Projeto de Geração de Mapa de Karnaugh em C
 
-Este é um programa simples em linguagem C que monta um mapa de Karnaugh com base no resultado da tabela-verdade para 2, 3, 4 e 5 variáveis.
+Este é um programa simples em linguagem C que monta um mapa de Karnaugh com base no resultado de tabela-verdade para 2, 3 e 4 variáveis.
 
 ## Execução do Programa
 
