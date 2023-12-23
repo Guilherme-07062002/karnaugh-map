@@ -23,9 +23,9 @@ void printKMapThreeVariables(int map[2][4])
 
   printf("\nMapa de Karnaugh\n");
   printf("----------------------------\n");
-  printf("   |'B'C | 'BC | BC  | B'C |\n");
+  printf("   |!B!C | !BC | BC  | B!C |\n");
   printf("----------------------------\n");
-  printf("'A |  %d  |  %d  |  %d  |  %d  |\n", map[0][0], map[0][1], map[0][3], map[0][2]);
+  printf("!A |  %d  |  %d  |  %d  |  %d  |\n", map[0][0], map[0][1], map[0][3], map[0][2]);
   printf(" A |  %d  |  %d  |  %d  |  %d  |\n", map[1][0], map[1][1], map[1][3], map[1][2]);
   printf("----------------------------\n");
 }

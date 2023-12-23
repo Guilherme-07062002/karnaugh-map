@@ -19,9 +19,9 @@ void printKMapTwoVariables(int map[2][2])
 
   printf("\nMapa de Karnaugh\n");
   printf("----------------\n");
-  printf("   | 'B  |  B  |\n");
+  printf("   | !B  |  B  |\n");
   printf("----------------\n");
-  printf("'A |  %d  |  %d  |\n", map[0][0], map[0][1]);
+  printf("!A |  %d  |  %d  |\n", map[0][0], map[0][1]);
   printf(" A |  %d  |  %d  |\n", map[1][0], map[1][1]);
   printf("----------------\n");
 }
